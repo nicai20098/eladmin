@@ -4,15 +4,15 @@ spring:
     druid:
       db-type: com.alibaba.druid.pool.DruidDataSource
       driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-      url: jdbc:log4jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:eladmin}?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false
-      username: ${DB_USER:root}
+      url: jdbc:log4jdbc:mysql://${DB_HOST:8.141.51.79}:${DB_PORT:3306}/${DB_NAME:eladmin}?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false
+      username: ${DB_USER:admin}
       password: ${DB_PWD:123456}
       # 初始连接数
       initial-size: 5
       # 最小连接数
-      min-idle: 15
+      min-idle: 10
       # 最大连接数
-      max-active: 30
+      max-active: 20
       # 是否自动回收超时连接
       remove-abandoned: true
       # 超时时间(以秒数为单位)
@@ -110,8 +110,8 @@ file:
     path: ~/file/
     avatar: ~/avatar/
   linux:
-    path: /home/eladmin/file/
-    avatar: /home/eladmin/avatar/
+    path: /home/admin/web/eladmin/file/
+    avatar: /home/admin/web/eladmin/avatar/
   windows:
     path: C:\eladmin\file\
     avatar: C:\eladmin\avatar\
